@@ -24,10 +24,10 @@ namespace numeriNegativi
             somma = somma + value;
             Console.WriteLine("In output viene visualizzato il valore della variabile value che cambia segno e la somma della variabile value e della variabile value cambiata di segno");
             Console.WriteLine($"{value} e {somma}");
-            long number = 55555;
-            Console.WriteLine(Convert.ToString(number, 2));
-            short number1 = (short)number;
-            Console.WriteLine(number1);
+            long number = 55555;// la variabile è di tipo long, cioè che può contenere fino a 64 bit (8 byte), incluso il segno
+            Console.WriteLine(Convert.ToString(number, 2));// Viene visualizzato in output il valore della variabile number in binario
+            short number1 = (short)number;// La variabile number viene trasformata in una variabile short, e quindi dimezzata in 16 bit, e poi il valore viene salvato nella variabile number1
+            Console.WriteLine(number1);//i bit restanti vengono trasformati in numero decimale e visualizzati in output
         }
     }
 }
