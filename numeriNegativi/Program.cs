@@ -16,11 +16,13 @@ namespace numeriNegativi
             int c = -b;
             Console.WriteLine(Convert.ToString(b, 2));
             Console.WriteLine(Convert.ToString(c, 2)); // il valore di b cambia segno e scritto in output a base binaria
-            int value = 31;
+            Console.WriteLine("Inserisci un numero intero");
+            int value = Convert.ToInt32(Console.ReadLine());
             int somma = value;
             value = ~value + 1; // NOT
             // value = value + 1;
             somma = somma + value;
+            Console.WriteLine("In output viene visualizzato il valore della variabile value che cambia segno e la somma della variabile value e della variabile value cambiata di segno");
             Console.WriteLine($"{value} e {somma}");
             long number = 55555;
             Console.WriteLine(Convert.ToString(number, 2));
